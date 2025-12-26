@@ -40,7 +40,6 @@ from routers.shapes.circle_in_square import draw_circle_in_square
 from routers.shapes.square_in_circle import draw_square_in_circle
 from routers.shapes.triangle_in_circle import draw_triangle_in_circle
 
-
 # =========================================================
 # Router protected with JWT
 # =========================================================

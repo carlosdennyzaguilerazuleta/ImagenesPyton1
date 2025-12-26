@@ -98,6 +98,7 @@ class GenerateRequest(BaseModel):
         "rectangle",
         "circle_in_square",
         "square_in_circle",
+        "triangle_in_circle",
 
         # legacy 3D directos
         "rectangle_prism",
