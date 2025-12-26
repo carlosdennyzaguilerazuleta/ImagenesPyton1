@@ -38,6 +38,8 @@ from routers.shapes.cube import draw_cube
 from routers.shapes.pyramid import draw_pyramid
 from routers.shapes.circle_in_square import draw_circle_in_square
 from routers.shapes.square_in_circle import draw_square_in_circle
+from routers.shapes.triangle_in_circle import draw_triangle_in_circle
+
 
 # =========================================================
 # Router protected with JWT
@@ -108,6 +110,8 @@ async def generate(req: Union[GenerateRequest, SolidEnvelope, AnglesDiagramReque
                 img_bytes = draw_circle_in_square(req)
             elif req.shape == "square_in_circle":
                 img_bytes = draw_square_in_circle(req)
+            elif req.shape == "triangle_in_circle":
+                img_bytes = draw_triangle_in_circle(req)
             else:
                 raise ValueError(f"Shape ''{req.shape}'' no soportado para GenerateRequest.")
 
