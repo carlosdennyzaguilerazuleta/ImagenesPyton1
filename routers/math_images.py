@@ -85,7 +85,7 @@ async def generate(req: Union[GenerateRequest, SolidEnvelope, AnglesDiagramReque
                 img_bytes = draw_cube(p, req.title)
             elif t == "pyramid":
                 p = PyramidParams(**req.params)
-                img_bytes = draw_pyramid(p, req.title)
+                img_bytes = draw_pyramid(p, req.title)                   
             else:
                 raise ValueError("Tipo de sólido no soportado.")
 
@@ -105,6 +105,8 @@ async def generate(req: Union[GenerateRequest, SolidEnvelope, AnglesDiagramReque
                 img_bytes = draw_cartesian(req)
             elif req.shape == "rectangle":
                 img_bytes = draw_rectangle(req)
+            elif req.shape == "pentagono":
+                img_bytes = draw_pentagon(req)                
             elif req.shape == "circle_in_square":
                 img_bytes = draw_circle_in_square(req)
             elif req.shape == "square_in_circle":

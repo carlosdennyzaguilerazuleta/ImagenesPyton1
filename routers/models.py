@@ -96,6 +96,7 @@ class GenerateRequest(BaseModel):
         "function",
         "cartesian",
         "rectangle",
+        "pentagono",
         "circle_in_square",
         "square_in_circle",
         "triangle_in_circle",
@@ -118,6 +119,9 @@ class GenerateRequest(BaseModel):
     label_base: Optional[str] = None
     label_height: Optional[str] = None
     label_hypotenuse: Optional[str] = None
+    
+    #pentagono
+    radio: Optional[str] = None
 
     # Nuevos modos de construcción
     mode: Optional[Literal["sss", "sas", "asa", "aas"]] = None
@@ -186,6 +190,7 @@ class GenerateRequest(BaseModel):
     label_width: Optional[str] = None
     label_height: Optional[str] = None
 
+    
     # -------------------------
     # 3D legacy - Prisma triangular
     # -------------------------
