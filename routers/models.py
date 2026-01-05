@@ -119,9 +119,11 @@ class GenerateRequest(BaseModel):
     label_base: Optional[str] = None
     label_height: Optional[str] = None
     label_hypotenuse: Optional[str] = None
-    
+
     #pentagono
     radio: Optional[str] = None
+    apotema: Optional[str] = None     
+    lado: Optional[str] = None     
 
     # Nuevos modos de construcción
     mode: Optional[Literal["sss", "sas", "asa", "aas"]] = None
