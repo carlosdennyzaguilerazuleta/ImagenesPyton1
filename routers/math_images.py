@@ -28,6 +28,7 @@ from routers.shapes.line import draw_line
 from routers.shapes.function import draw_function
 from routers.shapes.cartesian import draw_cartesian
 from routers.shapes.rectangle import draw_rectangle
+from routers.shapes.pentagono import draw_pentagon
 from routers.shapes.angles import draw_angles
 from routers.shapes.rectangular_prism import draw_rectangular_prism_params
 from routers.shapes.triangular_prism import draw_triangular_prism_params
